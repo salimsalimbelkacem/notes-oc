@@ -25,7 +25,7 @@ $
 $c_i$: valeur/profit de l'objet $i$
 
 $x_i$: variable de decision binaire
-$cases( "1 si objet" i "est choisi", "0 sinon")$
+$cases( "1 objet" i "est choisi", "0 sinon")$
 
 $a_i$: cout de l'objet $i$
 
@@ -84,7 +84,7 @@ cases(
 $
 
 $x_(i j)$ variable de decision binaire
-$cases(1 "si le le chemin entre", "point" i "et point" j "est pris",,
+$cases(1 "le chemin entre", "point" i "et point" j "est pris",,
 0 "sinon") $
 
 $c_(i j)$: cout de distance entre point $i$ et point $j$
@@ -102,12 +102,21 @@ cases(
 $
 
 $x_j$: variable de decision binaire
-$cases(1 "si usine" j "ouvre:",
+$cases(1 "site" j "ouvre",
 0 "sinon") $
 
+\
+
 $y_(i j)$: variable de decision binaire
-$cases(1 "si client" i "est satisfait par site" j,
+$cases(1 "client" i "est","   satisfait par site" j,,
 0 "sinon") $
+
+$i in I$: ensemble des clients
+
+$j in J$: ensemble des sites
+
+$c_(i j)$: cout du site $j$ au client $i$
+
 == CFLP (stock a quantite finie)
 $
 cases(
